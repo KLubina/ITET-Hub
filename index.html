@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITET Hub – ETH Zürich</title>
+    <style>
+        :root {
+            --color-background: #fff;
+            --color-text: #333;
+            --color-border: #ddd;
+            --color-accent: #0066cc;
+            --color-accent-hover: #0052a3;
+            --font-family: Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 28px 24px;
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .card h2 {
+            font-size: 20px;
+            color: var(--color-text);
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            flex: 1;
+        }
+
+        .card a {
+            display: inline-block;
+            background: var(--color-accent);
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            text-align: center;
+            transition: background 0.2s ease;
+        }
+
+        .card a:hover {
+            background: var(--color-accent-hover);
+        }
+
+        @media (max-width: 640px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ITET Hub</h1>
+        <p>BSc Elektrotechnik und Informationstechnologie – ETH Zürich</p>
+    </header>
+
+    <div class="cards">
+        <div class="card">
+            <h2>🗺️ ITET MindMap</h2>
+            <p>Interaktive Übersicht des ITET-Studienplans mit allen Modulen und Zusammenhängen.</p>
+            <a href="https://KLubina.github.io/ITET-MindMap/" target="_blank" rel="noopener">Öffnen</a>
+        </div>
+
+        <div class="card">
+            <h2>📚 Learning Hub</h2>
+            <p>Lernressourcen, Skripte und Übungsfolien für die ITET-Vorlesungen.</p>
+            <a href="https://KLubina.github.io/ITET-Learning-Hub/" target="_blank" rel="noopener">Öffnen</a>
+        </div>
+
+        <div class="card">
+            <h2>📝 Exam Hub</h2>
+            <p>Alte Prüfungen, Hilfsmittelübersichten und Prüfungsvorbereitung für ITET.</p>
+            <a href="https://KLubina.github.io/ITET-Exam-Hub/" target="_blank" rel="noopener">Öffnen</a>
+        </div>
+    </div>
+</body>
+
+</html>
